@@ -1,0 +1,155 @@
+.footer {
+  padding: 66px 0px 102px;
+  background-color: $footer-bg;
+
+  &__top {
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 83px;
+  }
+
+  &__decor {
+    margin-right: 70px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 84px;
+  }
+
+  &__item {
+    width: 387px;
+  }
+
+  // &__form {
+  //   // border-bottom: 1px solid $black;
+  // }
+
+  &__form-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // &__social-link {
+  // }
+
+  &__nav {
+    margin-top: 70px;
+    margin-right: 85px;
+  }
+}
+
+.form {
+  border-bottom: 1px solid $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__input {
+    width: 100%;
+    padding: 0 10px 10px 0;
+    &::placeholder {
+      font-size: 12px;
+      // opacity: 0.5;
+    }
+  }
+
+  // &__btn {
+  // }
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  // &__list-item {
+  // }
+
+  &__list-link {
+    font-size: 14px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .footer {
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    &__decor {
+      // max-width: 337px;
+      margin-right: 0;
+    }
+
+    &__items {
+      margin-right: 0;
+      gap: 20px;
+    }
+
+    &__social-list {
+      flex-direction: row;
+    }
+
+    &__nav {
+      margin-right: 0;
+    }
+  }
+  .menu {
+    &__list {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .menu {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    &__item {
+      width: auto;
+    }
+  }
+}

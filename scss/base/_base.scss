@@ -1,0 +1,58 @@
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  // line-height: 17px;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-arrow {
+  position: relative;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.none {
+  display: none !important;
+}
+
+.section-page {
+  margin-bottom: 150px;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $purple;
+  text-align: center;
+  padding: 21px;
+
+  border: 1px solid $purple;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $white;
+    background-color: $purple;
+  }
+}
+
+@media (max-width: 850px) {
+  .btn {
+    padding: 15px;
+  }
+
+  .section-page {
+    margin-bottom: 50px;
+  }
+}
